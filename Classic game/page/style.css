@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.navs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 5% 10px;
+    align-items: center
+}
+.navs .log{
+    text-decoration: none;
+    border: solid 1px;
+    background-color: #ffe;
+    border-radius: 10px;
+    padding: 10px;
+    color: black;
+}
+
+.navs h1{
+    text-align: center;
+    font-weight: bolder;
+}
+
+#one{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+#one a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+#one img {
+    width:195px; 
+    height: 250px;
+}
+
+
+#shooting a{
+  width: 10px;
+      
+}
+
+#wordle a{
+    width:195px; 
+    height: 250px;
+} 
+
+#pac-man a{
+    width:195px; 
+    height: 250px;
+} 

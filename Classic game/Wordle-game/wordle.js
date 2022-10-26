@@ -10,7 +10,7 @@ let row = 0; // 현재 줄 (attempt #)
 let col = 0; // 현재 알파벳 인덱스 
 
 let gameOver = false;
-let word = "WIDTH";
+let word = "SOUND";
 
 
 function initialize() {
@@ -62,6 +62,7 @@ if ("KeyA" <= e.code && e.code <= "KeyZ") {
   	}
 })
 
+
 };
 
 
@@ -103,8 +104,15 @@ window.addEventListener("keyup", e => {
   if (key) key.classList.remove('pressed');
 });
 
-// window.addEventListener('keydown', (e)=>{
-//   e.code = e.code.
-// });
+// 키보드 클릭 버튼
 
-// console.log(window);
+document.addEventListener('click', ()=>{
+  let tile = document.createElement("span"); 
+  tile.id = r.toString() + "-" + c.toString(); 
+  tile.classList.add("tile");
+  tile.innerText = "";
+  document.getElementById("board").appendChild(tile); 
+});
+
+
+

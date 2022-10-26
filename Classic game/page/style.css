@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 body{
     margin: 0;
 }
 *{
     box-sizing: border-box;
     user-select: none;
+
 }
+
+
 
 .navs{
     display: flex;
@@ -13,18 +17,37 @@ body{
     padding: 20px 5% 10px;
     align-items: center
 }
+
+.navs img{
+    width: 36px;
+    height: 36px;
+}
+
+/* .black{
+    position: relative;
+
+}
+
+.white{
+    position: absolute;
+
+
+} */
+
 .navs .log{
     text-decoration: none;
     border: solid 1px;
-    background-color: #ffe;
+    background-color: #000;
     border-radius: 10px;
     padding: 10px;
-    color: black;
+    color: #fff;
+    
 }
 
 .navs h1{
     text-align: center;
-    font-weight: bolder;
+    padding-left: 80px;
+    font-family: 'Oswald', sans-serif;
 }
 
 #one{
@@ -40,41 +63,85 @@ body{
 #one img {
     width:195px; 
     height: 250px;
+    display: block;
+    border: solid 1px #fff;
 }
 
-.btn{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px 19% 0;
+.log{
+    padding: 10px 19% ;
     align-items: center;
-    padding-bottom: 3%;
+    padding-bottom: 3%; 
 }
 
-.btn button{
+div .game{
+    /* margin-left: 100px; */
+    text-align: center;
+    float: left;
+}
+
+
+.game button{
     color: black;
     font-weight: bold;
-    width: 12%;
+    width: 60%;
     height: 20%;
     border-radius: 10px;
     box-shadow: 10px;
     transition: 0.3;
     padding: 4px;
+    margin-top: 15%;
+
 }
+
+div .game1{
+    /* margin-left: 100px; */
+    text-align: center;
+    float: left;
+}
+
+
+.game1 button{
+    color: black;
+    font-weight: bold;
+    width: 60%;
+    height: 20%;
+    border-radius: 10px;
+    box-shadow: 10px;
+    transition: 0.3;
+    padding: 4px;
+    margin-top: 15%;
+}
+
+div .game2{
+    /* margin-left: 100px; */
+    text-align: center;
+    float: left;
+}
+
+
+.game2 button{
+    color: black;
+    font-weight: bold;
+    width: 60%;
+    height: 20%;
+    border-radius: 10px;
+    box-shadow: 10px;
+    transition: 0.3;
+    padding: 4px;
+    margin-top: 15%;
+}
+
 
 button:focus{
     outline: 0;
 }
 
 button:hover{
-    background-color: blueviolet;
+    background-color: #4CAF50; 
     cursor: pointer;
     box-shadow: 10px;
 }
-.btn a{
-    text-decoration: none;
-    font-size: 16px;
-}
+
 
 
 #two{
@@ -86,8 +153,66 @@ button:hover{
     padding-right: 18%;
     align-items: center;
     padding-top: 4%;
+    padding-bottom: 50px;
 }
 #two img {
     width:195px; 
     height: 250px;
+    display: block;
+    border: solid 1px #fff;
 }
+
+
+/* @media (min-width: 576px) and (max-width: 767px) {
+    .navs{
+        width: 200px;
+        height: 200px;
+    }
+} */
+
+@media (max-width: 568px) {
+    .navs{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .navs h1{
+        font-size: 20px;
+        padding-right: 15px;
+    }
+
+    .navs img{
+        width: 30px;
+        height: 30px;
+       
+    }
+}
+
+@media(max-width: 500px){
+
+    #two{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+       
+    }
+    .game1{
+        top: 15%;
+    }
+    /* .game img {
+        margin-top: 30px;
+    } */
+    #one{
+        display: none;
+        padding: 0;
+        flex-direction: column;
+    }
+    body hr{
+        visibility: hidden;
+
+    }
+
+}
+
+
+
